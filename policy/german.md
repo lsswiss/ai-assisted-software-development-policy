@@ -124,3 +124,8 @@ Ort, Datum: ______________________
 
 Unterschrift: ____________________
 
+Source: lsswiss/ai-assisted-software-development-policy
+
+Open Source Policy
+
+This policy is published as an open-source framework under the CC BY 4.0 License and may be freely used, adapted and redistributed with appropriate attribution.
