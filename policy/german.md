@@ -30,8 +30,9 @@ Jede API-Route und jeder Ajax-Endpunkt prüft sämtliche Eingaben zuerst mit ein
 ### 2.6 Verbot von freier Datenbank- und Dateisystem-Exposition
 Es werden keine API-Routen oder Ajax-Endpunkte erstellt, die frei auf die Datenbank oder auf die Festplatte/den Speicher der Server zugreifen können, weder lesend noch schreibend.
 
-### 2.7 Lizenzprüfung und Haftung bei Schutzrechtsverletzungen
-KI-generierter Code wird vor dem Einchecken daraufhin geprüft, ob er Lizenzen und Rechte Dritter verletzt. Der Software-Architekt haftet persönlich für monetäre Ansprüche Dritter, wenn durch den von ihm eingecheckten Code Lizenzen oder Rechte von Dritten verletzt werden, oder wenn diese Ansprüche oder Nutzungsentgelte geltend machen.
+### 2.7 Lizenzprüfungs-Pflicht & Wahrung von Rechten Dritter
+
+KI-generierter Code wird vor dem Einchecken in die Repositories vom zuständigen Software-Architekten sorgfältig daraufhin geprüft, ob er Lizenzen, Urheberrechte oder sonstige Schutzrechte Dritter verletzt.
 
 ### 2.8 Bring Your Own AI (BYOAI)
 Der Software-Architekt bezahlt für die von ihm verwendeten KI-Tools selbst.
