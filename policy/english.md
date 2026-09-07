@@ -30,8 +30,8 @@ Each API route and Ajax endpoint must validate all inputs first through a centra
 ### 2.6 Prohibition of Unrestricted Database and Filesystem Exposure
 No API routes or Ajax endpoints may be created that allow unrestricted read or write access to databases or to server disks/storage.
 
-### 2.7 License Checks and Liability for IP Infringement
-AI-generated code must be reviewed before commit to ensure it does not violate licenses or third-party rights. The software architect is personally liable for third-party monetary claims if committed code infringes licenses or third-party rights, or if related fees or claims are asserted.
+### 2.7 Mandatory License Review & Protection of Third-Party Rights
+Before being checked into the repositories, AI-generated code is carefully reviewed by the responsible software architect to ensure it does not infringe upon third-party licenses, copyrights, or other intellectual property rights.
 
 ### 2.8 Bring Your Own AI (BYOAI)
 The software architect pays for the AI tools they use.
