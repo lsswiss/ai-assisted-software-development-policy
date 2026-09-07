@@ -99,11 +99,26 @@ During manual testing, the application must be checked against the following usa
 - **Use of UI standard elements:** Established UI components and design patterns must be used so users can navigate immediately without onboarding.
 - **Responsiveness for mobile devices:** The user interface must work on mobile devices and different screen sizes without rendering or functional errors.
 
-## 4. Effective Date and Revision
-This regulation enters into force upon signature by management. Management reviews it at least once per year and adjusts it in case of major operational changes. Every change must be recorded by management with version number, date, and reason for change in the version table at the beginning of this document.
+## 4. Validity and Binding Effect
 
-Name: _____________________  
-Function: _____________________  
-Date: _____________________  
-Place: _____________________  
-Signature: _____________________
+These regulations are effective as of [Date].
+
+Upon signing, these regulations become immediately binding on the signing software architect. By signing, the architect confirms having read and understood the regulations and agrees to fully comply with the obligations and liability terms contained therein.
+
+Management reviews the regulations at least once a year. Any amendments will be submitted to the software architect for review and countersignature.
+
+
+Issued by Management:
+
+Location, Date: ______________________
+
+Signature: ____________________
+
+
+Read, understood, and acknowledged as binding (Software Architect):
+
+Name: ____________________________
+
+Location, Date: ______________________
+
+Signature: ____________________
