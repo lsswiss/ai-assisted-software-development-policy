@@ -1,6 +1,6 @@
 # Richtlinie für KI-Nutzung, Code-Qualität & Human Testing
 
-Für den Einsatz von KI gelten bei Langmeier Software GmbH die folgenden Grundsätze. Sie orientieren sich an der OWASP-Liste **„Top 10 Risks for LLM Applications“ (2025)**.
+Für den Einsatz von KI gelten bei [Company] die folgenden Grundsätze. Sie orientieren sich an der OWASP-Liste **„Top 10 Risks for LLM Applications“ (2025)**.
 
 ## 1. Verantwortung und Haftung des Software-Architekten
 
@@ -59,7 +59,7 @@ Bestehende Kernkomponenten und Engines (z. B. API-Architektur, Payment-Gateways,
 ### 2.13 Kennzeichnungspflicht und EU AI Act Compliance
 
 #### Transparenz gegenüber Endkunden
-Sofern in Produkten der Langmeier Software GmbH KI-generierte Inhalte (Texte, Bildmaterial, Code) oder interaktive KI-Systeme (z. B. Chatbots) zum Einsatz kommen, sind diese gemäß den Vorgaben des EU AI Act (Künstliche Intelligenz-Verordnung) für den Endnutzer klar und unzweideutig als KI-generiert bzw. KI-gestützt zu kennzeichnen.
+Sofern in Produkten der [Company] KI-generierte Inhalte (Texte, Bildmaterial, Code) oder interaktive KI-Systeme (z. B. Chatbots) zum Einsatz kommen, sind diese gemäß den Vorgaben des EU AI Act (Künstliche Intelligenz-Verordnung) für den Endnutzer klar und unzweideutig als KI-generiert bzw. KI-gestützt zu kennzeichnen.
 
 #### Verbot von Risikoklassen
 Der Einsatz von KI-Systemen, die unter das Verbot des EU AI Act fallen (z. B. unzulässige Verhaltensbeeinflussung oder Biometrie-Scoring), ist im gesamten Unternehmen ausnahmslos untersagt.
@@ -67,7 +67,7 @@ Der Einsatz von KI-Systemen, die unter das Verbot des EU AI Act fallen (z. B. un
 ### 2.14 Sicherheit von KI-Komponenten im Produkt (Prompt Injection & System Prompts)
 
 #### Schutz vor Prompt Injection (OWASP LLM01)
-Sofern KI-Agenten oder LLM-Schnittstellen direkt in Produkte oder Services der Langmeier Software GmbH integriert werden, sind geeignete technische und organisatorische Maßnahmen zum Schutz vor direkter und indirekter Prompt Injection umzusetzen. Nicht vertrauenswürdige Benutzer- und Fremdinhalte dürfen nicht ungeprüft als vertrauenswürdige Instruktionen verarbeitet werden. Insbesondere sind eine klare Trennung von Systeminstruktionen und nicht vertrauenswürdigen Inhalten, serverseitige Autorisierungs- und Validierungsprüfungen für Tool- und Funktionsaufrufe sowie das Prinzip der geringstmöglichen Berechtigungen sicherzustellen.
+Sofern KI-Agenten oder LLM-Schnittstellen direkt in Produkte oder Services der [Company] integriert werden, sind geeignete technische und organisatorische Maßnahmen zum Schutz vor direkter und indirekter Prompt Injection umzusetzen. Nicht vertrauenswürdige Benutzer- und Fremdinhalte dürfen nicht ungeprüft als vertrauenswürdige Instruktionen verarbeitet werden. Insbesondere sind eine klare Trennung von Systeminstruktionen und nicht vertrauenswürdigen Inhalten, serverseitige Autorisierungs- und Validierungsprüfungen für Tool- und Funktionsaufrufe sowie das Prinzip der geringstmöglichen Berechtigungen sicherzustellen.
 
 #### Absicherung von System-Prompts (OWASP LLM02 / LLM06)
 System-Prompts, Instruction-Sets und interne Agenten-Logiken sind als vertrauliche Systemkomponenten zu behandeln. Sie müssen gegen Information Leakage und Exfiltration durch Manipulationstechniken (z. B. „Ignore previous instructions“) abgesichert werden.
