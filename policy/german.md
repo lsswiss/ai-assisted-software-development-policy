@@ -1,4 +1,4 @@
-# Richtlinie für KI-Nutzung, Code-Quality & Human Testing
+# Richtlinie für KI-Nutzung, Code-Qualität & Human Testing
 
 Für den Einsatz von KI gelten bei Langmeier Software GmbH die folgenden Grundsätze. Sie orientieren sich an der OWASP-Liste **„Top 10 Risks for LLM Applications“ (2025)**.
 
@@ -99,11 +99,27 @@ Beim manuellen Testing wird die Anwendung zwingend auf folgende Usability-Kriter
 - **Nutzung von UI-Standard-Elementen:** Verwendung etablierter UI-Komponenten und Design-Patterns, damit sich Nutzer ohne Einarbeitung sofort zurechtfinden.
 - **Responsiveness für Mobile Devices:** Die Benutzeroberfläche muss auf mobilen Geräten und unterschiedlichen Bildschirmgrössen ohne Darstellungs- oder Funktionsfehler bedienbar sein.
 
-## 4. Inkrafttreten und Revision
-Dieses Reglement tritt mit der Unterschrift der Geschäftsleitung in Kraft. Die Geschäftsleitung überprüft es mindestens einmal jährlich und passt es bei wesentlichen betrieblichen Änderungen an. Jede Änderung erfasst die Geschäftsleitung mit Versionsnummer, Datum und Änderungsgrund in der Versionstabelle am Anfang dieses Dokuments.
+## 4. Geltung und Verbindlichkeit
 
-Name: _____________________  
-Funktion: _____________________  
-Datum: _____________________  
-Ort: _____________________  
-Unterschrift: _____________________
+Dieses Reglement ist ab dem [Datum] betrieblich gültig.
+
+Mit seiner Unterschrift erlangt dieses Reglement für den unterzeichnenden Software-Architekten unmittelbare Verbindlichkeit. Er bestätigt damit, das Reglement gelesen und verstanden zu haben und die darin enthaltenen Pflichten und Haftungsbedingungen vollumfänglich einzuhalten.
+
+Die Geschäftsleitung überprüft das Reglement mindestens einmal jährlich. Anpassungen werden dem Software-Architekten erneut zur Kenntnisnahme und Gegenzeichnung vorgelegt.
+
+
+Erlassen durch die Geschäftsleitung:
+
+Ort, Datum: ______________________
+
+Unterschrift: ____________________
+
+
+Gelesen, verstanden und als verbindlich anerkannt (Software-Architekt):
+
+Name: ____________________________
+
+Ort, Datum: ______________________
+
+Unterschrift: ____________________
+
