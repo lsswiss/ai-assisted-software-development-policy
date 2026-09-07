@@ -124,7 +124,9 @@ Ort, Datum: ______________________
 
 Unterschrift: ____________________
 
-Source: lsswiss/ai-assisted-software-development-policy
+
+---
+Source: github.com/lsswiss/ai-assisted-software-development-policy
 
 Open Source Policy
 
