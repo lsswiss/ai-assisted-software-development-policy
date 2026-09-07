@@ -1,6 +1,6 @@
 # Policy for AI Usage, Code Quality & Human Testing
 
-For the use of AI at Langmeier Software GmbH, the following principles apply. They are aligned with the OWASP list **“Top 10 Risks for LLM Applications” (2025)**.
+For the use of AI at [Company Name], the following principles apply. They are aligned with the OWASP list **“Top 10 Risks for LLM Applications” (2025)**.
 
 ## 1. Responsibility and Liability of the Software Architect
 
@@ -58,7 +58,7 @@ Existing core components and engines (e.g., API architecture, payment gateways, 
 ### 2.13 Labeling Obligation and EU AI Act Compliance
 
 #### Transparency Toward End Customers
-If AI-generated content (text, images, code) or interactive AI systems (e.g., chatbots) are used in Langmeier Software GmbH products, they must be clearly and unambiguously labeled as AI-generated or AI-assisted for end users in accordance with the EU AI Act.
+If AI-generated content (text, images, code) or interactive AI systems (e.g., chatbots) are used in [Company Name] products, they must be clearly and unambiguously labeled as AI-generated or AI-assisted for end users in accordance with the EU AI Act.
 
 #### Prohibition of Forbidden Risk Classes
 The use of AI systems that fall under prohibited categories of the EU AI Act (e.g., impermissible behavioral manipulation or biometric scoring) is strictly prohibited throughout the company.
@@ -66,7 +66,7 @@ The use of AI systems that fall under prohibited categories of the EU AI Act (e.
 ### 2.14 Security of AI Components in Products (Prompt Injection & System Prompts)
 
 #### Protection Against Prompt Injection (OWASP LLM01)
-If AI agents or LLM interfaces are integrated directly into Langmeier Software GmbH products or services, suitable technical and organizational controls must be implemented to protect against direct and indirect prompt injection. Untrusted user and third-party content must not be processed as trusted instructions without review. In particular, clear separation of system instructions and untrusted content, server-side authorization and validation checks for tool/function calls, and least-privilege principles must be ensured.
+If AI agents or LLM interfaces are integrated directly into [Company Name] products or services, suitable technical and organizational controls must be implemented to protect against direct and indirect prompt injection. Untrusted user and third-party content must not be processed as trusted instructions without review. In particular, clear separation of system instructions and untrusted content, server-side authorization and validation checks for tool/function calls, and least-privilege principles must be ensured.
 
 #### Protection of System Prompts (OWASP LLM02 / LLM06)
 System prompts, instruction sets, and internal agent logic must be treated as confidential system components. They must be secured against information leakage and exfiltration via manipulation techniques (e.g., “Ignore previous instructions”).
