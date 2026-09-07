@@ -123,6 +123,7 @@ Location, Date: ______________________
 
 Signature: ____________________
 
+
 ---
 Source: github.com/lsswiss/ai-assisted-software-development-policy
 
