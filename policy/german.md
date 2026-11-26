@@ -120,6 +120,21 @@ System-Prompts, Instruction-Sets und interne Agenten-Logiken sind als vertraulic
 #### Human-in-the-Loop & Agency-Begrenzung (OWASP LLM08)
 KI-Agenten dürfen keine eigenständigen, unumkehrbaren Aktionen (wie das Löschen von Daten, das Ausführen von Finanztransaktionen oder das Ändern von Systemkonfigurationen) ohne explizite, manuelle Freigabe durch einen menschlichen Nutzer oder Operator durchführen.
 
+### 2.15 Verbot der unnötigen Neuentwicklung bestehender Softwarekomponenten (Rewrite statt Bugfix)
+Bestehende Softwarekomponenten, Module und Anwendungen sind grundsätzlich gezielt weiterzuentwickeln und instand zu halten. Fehler (Bugs), Fehlfunktionen und technische Unzulänglichkeiten sind vorrangig durch gezielte Korrekturen, Verbesserungen oder angemessene Refactorings innerhalb der bestehenden Architektur zu beheben.
+
+Es ist untersagt, bestehende Softwarekomponenten, Module oder Anwendungen ohne sachlich und technisch begründete Notwendigkeit vollständig oder in wesentlichen Teilen durch KI-generierten Code neu entwickeln oder ersetzen zu lassen, wenn die bestehenden Funktionalitäten durch gezielte Fehlerbehebungen oder verhältnismässige Anpassungen erhalten und verbessert werden können.
+
+Insbesondere ist es unzulässig, einen bestehenden Softwarebestand allein aus Gründen der einfacheren KI-generierten Implementierung, vermeintlich höheren Entwicklungsgeschwindigkeit oder persönlichen Präferenz des Entwicklers durch eine Neuentwicklung zu ersetzen.
+
+Eine vollständige oder teilweise Neuentwicklung (Rewrite) ist nur zulässig, wenn hierfür nachvollziehbare technische, wirtschaftliche oder architektonische Gründe vorliegen und die Geschäftsleitung oder eine von ihr ausdrücklich schriftlich bevollmächtigte Person dem Vorhaben vor Beginn ausdrücklich zugestimmt hat.
+
+Die schriftliche Zustimmung kann insbesondere per Brief, E-Mail oder über einen anderen dauerhaft dokumentierbaren elektronischen Kommunikationsweg erfolgen. Die Zustimmung muss eindeutig, ausdrücklich und der zuständigen entscheidungsberechtigten Person zuordenbar sein.
+
+Bei einer genehmigten Neuentwicklung sind insbesondere die bestehenden Geschäftslogiken, Schnittstellen, Sicherheitsmechanismen, Datenstrukturen, Abhängigkeiten und funktionalen Anforderungen angemessen zu berücksichtigen.
+
+Die Verantwortung für die Einhaltung bestehender Architekturvorgaben sowie für die technische Begründung vorgeschlagener Neuentwicklungen verbleibt beim zuständigen Software-Architekten beziehungsweise Entwickler im Rahmen seines jeweiligen Aufgaben- und Verantwortungsbereichs.
+
 ## 3. Human Testing & Usability-Standards
 Kein automatisierter oder maschineller Test ersetzt die echte menschliche Nutzung. Jede Softwarekomponente muss vor der Freigabe durch manuelle Tests auf fachliche Korrektheit, Nutzbarkeit und Einhaltung moderner UX/UI-Industriestandards geprüft werden.
 
