@@ -120,7 +120,48 @@ System-Prompts, Instruction-Sets und interne Agenten-Logiken sind als vertraulic
 #### Human-in-the-Loop & Agency-Begrenzung (OWASP LLM08)
 KI-Agenten dürfen keine eigenständigen, unumkehrbaren Aktionen (wie das Löschen von Daten, das Ausführen von Finanztransaktionen oder das Ändern von Systemkonfigurationen) ohne explizite, manuelle Freigabe durch einen menschlichen Nutzer oder Operator durchführen.
 
-### 2.15 Verbot der unnötigen Neuentwicklung bestehender Softwarekomponenten (Rewrite statt Bugfix)
+### 2.15 Verbot autonomer Ausführungsmodi (YOLO-Modus) bei KI-Agenten
+#### 2.15.1 Grundsatz und Definition
+Der sogenannte YOLO-Modus (You Only Live Once) bezeichnet einen Ausführungsmodus von KI-Agenten, bei dem diese eigenständig und ohne vorherige manuelle Bestätigung einzelner Aktionen Befehle ausführen, Dateien verändern, Code generieren, löschen, installieren oder anderweitige Systemoperationen durchführen können.
+
+Die Nutzung solcher autonomen Ausführungsmodi ist im Rahmen der geschäftlichen Tätigkeit grundsätzlich untersagt.
+
+KI-Agenten dürfen ausschliesslich in solchen Ausführungsmodi verwendet werden, bei denen der Entwickler die Kontrolle über die auszuführenden Aktionen behält und sicherheitsrelevante Änderungen vor deren Ausführung angemessen prüfen und freigeben kann.
+
+Das Verbot gilt unabhängig davon, ob sich die betreffende Umgebung auf einem lokalen Rechner, einem Entwicklungsserver, einem Testserver, einem Staging-System oder einem Produktivserver befindet.
+
+#### 2.15.2 Beispiele zur Abgrenzung zulässiger und unzulässiger Nutzung
+
+Die nachfolgende Tabelle dient der Konkretisierung des Verbots:
+
+| Szenario | Gemäss Reglement |
+| :--- | :---: |
+| YOLO auf lokalem Entwicklungsserver | Verboten |
+| YOLO auf isoliertem Testserver | Verboten |
+| YOLO auf Staging | Verboten |
+| YOLO mit SSH-Zugang zum Produktivserver | Verboten |
+| YOLO mit produktiven Datenbankzugängen | Verboten |
+| YOLO mit produktiven API-Keys | Verboten |
+
+Das Verbot umfasst insbesondere die Aktivierung von Ausführungsmodi, bei denen KI-Agenten Shell-Befehle, Dateioperationen, Codeänderungen oder sonstige Systemoperationen ohne vorherige menschliche Freigabe selbstständig durchführen können.
+
+#### 2.15.3 Zulässige KI-gestützte Entwicklungsarbeit
+Die Verwendung von KI-Agenten zur Unterstützung der Softwareentwicklung bleibt ausdrücklich zulässig, sofern die Ausführung innerhalb eines kontrollierten Arbeitsablaufs erfolgt.
+
+Insbesondere dürfen KI-Agenten:
+- Quellcode analysieren und Verbesserungsvorschläge erstellen;
+- Codeänderungen und Refactorings vorbereiten;
+- neue Funktionen implementieren, sofern die erforderlichen Ausführungsschritte kontrolliert erfolgen;
+- Testfälle und Dokumentationen generieren;
+- Fehler analysieren und Lösungsvorschläge erarbeiten.
+Der Entwickler muss die Kontrolle über die Ausführung behalten und sicherstellen, dass KI-generierte Änderungen vor ihrer Übernahme in die Versionsverwaltung fachlich, technisch und sicherheitstechnisch geprüft werden.
+
+#### 2.15.4 Verantwortung und Einhaltung
+Die eigenmächtige Aktivierung oder Verwendung eines untersagten autonomen Ausführungsmodus entgegen den vorstehenden Bestimmungen kann eine Verletzung arbeitsvertraglicher Pflichten darstellen.
+
+Die Beurteilung allfälliger arbeitsrechtlicher Konsequenzen und einer daraus resultierenden Haftung richtet sich nach den geltenden gesetzlichen Bestimmungen und den konkreten Umständen des Einzelfalls.
+
+### 2.16 Verbot der unnötigen Neuentwicklung bestehender Softwarekomponenten (Rewrite statt Bugfix)
 Bestehende Softwarekomponenten, Module und Anwendungen sind grundsätzlich gezielt weiterzuentwickeln und instand zu halten. Fehler (Bugs), Fehlfunktionen und technische Unzulänglichkeiten sind vorrangig durch gezielte Korrekturen, Verbesserungen oder angemessene Refactorings innerhalb der bestehenden Architektur zu beheben.
 
 Es ist untersagt, bestehende Softwarekomponenten, Module oder Anwendungen ohne sachlich und technisch begründete Notwendigkeit vollständig oder in wesentlichen Teilen durch KI-generierten Code neu entwickeln oder ersetzen zu lassen, wenn die bestehenden Funktionalitäten durch gezielte Fehlerbehebungen oder verhältnismässige Anpassungen erhalten und verbessert werden können.
