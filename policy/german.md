@@ -33,6 +33,8 @@ Die Verantwortung für übergeordnete Architekturvorgaben, technische Rahmenbedi
 
 Die persönliche Verantwortung des Software-Architekten erstreckt sich auf seinen jeweiligen Aufgaben- und Verantwortungsbereich und richtet sich nach den geltenden gesetzlichen Bestimmungen.
 
+Die Übernahme einer Funktion als Software-Architekt begründet keine verschuldensunabhängige Erfolgshaftung für die technische, wirtschaftliche oder rechtliche Fehlerfreiheit sämtlicher Softwareprodukte und Systeme des Unternehmens. Eine persönliche Haftung setzt die Erfüllung der gesetzlichen Haftungsvoraussetzungen voraus und beschränkt sich auf Pflichtverletzungen innerhalb des individuell übertragenen Aufgaben- und Verantwortungsbereichs.
+
 ### 1.2 Arbeitsrechtliche Haftung
 Der Software-Architekt oder Entwickler haftet für Schäden, die er dem Unternehmen oder Dritten durch eine schuldhafte Verletzung seiner arbeitsvertraglichen Pflichten verursacht, im Rahmen der gesetzlichen Bestimmungen, insbesondere nach Art. 321e OR.
 
@@ -104,7 +106,7 @@ Bestehende Kernkomponenten und Engines (z. B. API-Architektur, Payment-Gateways,
 ### 2.13 Kennzeichnungspflicht und EU AI Act Compliance
 
 #### Transparenz gegenüber Endkunden
-Sofern in Produkten der [Company] KI-generierte Inhalte (Texte, Bildmaterial, Code) oder interaktive KI-Systeme (z. B. Chatbots) zum Einsatz kommen, sind diese gemäß den Vorgaben des EU AI Act (Künstliche Intelligenz-Verordnung) für den Endnutzer klar und unzweideutig als KI-generiert bzw. KI-gestützt zu kennzeichnen.
+Die Nutzung und Bereitstellung von KI-Systemen hat unter Berücksichtigung der jeweils anwendbaren gesetzlichen Anforderungen zu erfolgen. Soweit der EU AI Act auf die Tätigkeit, Produkte oder Dienstleistungen des Unternehmens anwendbar ist, sind dessen einschlägige Transparenz-, Dokumentations- und Risikovorgaben einzuhalten. Verbotene KI-Praktiken gemäss Art. 5 EU AI Act sind untersagt.
 
 #### Verbot von Risikoklassen
 Der Einsatz von KI-Systemen, die unter das Verbot des EU AI Act fallen (z. B. unzulässige Verhaltensbeeinflussung oder Biometrie-Scoring), ist im gesamten Unternehmen ausnahmslos untersagt.
