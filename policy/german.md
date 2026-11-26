@@ -185,6 +185,30 @@ Bei einer genehmigten Neuentwicklung sind insbesondere die bestehenden Geschäft
 
 Die Verantwortung für die Einhaltung bestehender Architekturvorgaben sowie für die technische Begründung vorgeschlagener Neuentwicklungen verbleibt beim zuständigen Software-Architekten beziehungsweise Entwickler im Rahmen seines jeweiligen Aufgaben- und Verantwortungsbereichs.
 
+### 2.17 Kurzlebige Entwicklungs- und Testartefakte (Short-Living Test Artifacts)
+Während der Entwicklung, Fehlerbehebung und Implementierung von Software dürfen Entwickler temporäre Testskripte, Testdaten, Debugging-Dateien, Hilfsprogramme und sonstige technische Testartefakte erstellen und verwenden.
+
+Diese dienen ausschliesslich der unmittelbaren Entwicklungs- und Überprüfungsarbeit und sind grundsätzlich nicht dauerhaft in das produktive Repository zu übernehmen.
+
+Nach erfolgreicher Überprüfung und Abschluss der jeweiligen Entwicklungsarbeit sind temporäre Testartefakte zu entfernen, sofern sie keinen dauerhaft begründeten technischen oder fachlichen Mehrwert für das Softwareprojekt bieten.
+
+Insbesondere sollen keine zusätzlichen automatisierten Tests, Testframeworks, Testdatenbanken oder Testinfrastrukturen ausschliesslich deshalb in ein bestehendes Softwareprojekt integriert werden, um die vom Entwickler selbst vorgenommene Implementierung oder Fehlerbehebung nachträglich zu bestätigen.
+
+Dauerhaft zu übernehmende automatisierte Tests müssen einen nachvollziehbaren, langfristigen Mehrwert für die Qualitätssicherung, Regressionserkennung oder Stabilität der Software bieten und in einem angemessenen Verhältnis zur Komplexität und zum Wartungsaufwand stehen.
+
+Die Entscheidung über die dauerhafte Integration umfangreicher Testinfrastrukturen richtet sich nach den bestehenden Architekturvorgaben und Zuständigkeiten.
+
+### 2.18 Auswertung von Datenbanklogs und produktionsnahen Daten
+Müssen Datenbanklogs, Datenbankauszüge oder sonstige produktionsbezogene Datensätze zu Analyse-, Debugging-, Fehlerbehebungs- oder Entwicklungszwecken ausgewertet werden, hat dies grundsätzlich ausschliesslich anhand einer separaten Kopie der betreffenden Daten zu erfolgen.
+
+Die hierfür benötigten Daten sind vor der Auswertung aus der produktiven Umgebung zu exportieren und in eine geeignete, vom Produktivsystem getrennte Analyse- oder Entwicklungsumgebung zu übertragen.
+
+Eine direkte Auswertung durch KI-Agenten oder KI-Tools innerhalb produktiver Datenbanken oder Produktivsysteme ist untersagt.
+
+Vor der Weitergabe an KI-Tools sind personenbezogene Daten, Zugangsdaten, Session-Tokens, Passwörter, API-Schlüssel sowie sonstige vertrauliche oder sicherheitsrelevante Informationen soweit technisch möglich zu entfernen oder zu anonymisieren.
+
+Die Kopie muss unter angemessenen Sicherheitsvorkehrungen gespeichert, vor unbefugtem Zugriff geschützt und nach Wegfall des Analysezwecks gelöscht werden.
+
 ## 3. Human Testing & Usability-Standards
 Kein automatisierter oder maschineller Test ersetzt die echte menschliche Nutzung. Jede Softwarekomponente muss vor der Freigabe durch manuelle Tests auf fachliche Korrektheit, Nutzbarkeit und Einhaltung moderner UX/UI-Industriestandards geprüft werden.
 
