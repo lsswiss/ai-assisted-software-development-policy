@@ -93,9 +93,15 @@ Es ist strikt untersagt, personenbezogene Daten (z. B. Kunden-, Mitarbeiter- ode
 Bei der Nutzung von „Bring Your Own AI“ (BYOAI) dürfen ausschließlich KI-Tools und Tarife genutzt werden, deren Nutzungsbedingungen (Terms of Service) explizit garantieren, dass eingegebene Daten und Prompts nicht zum Training der KI-Modelle verwendet und nicht dauerhaft durch den Anbieter gespeichert werden (z. B. Business/Enterprise-Tiers mit Opt-out für Model Training). Die Nutzung kostenloser Consumer-Varianten ohne Datenschutzgarantien ist für geschäftliche Zwecke untersagt.
 
 ### 2.11 Urheberrecht und Schöpferhöhe bei KI-Einsatz
-Rein KI-generierter Code erfüllt nach internationalen Standards nicht die Voraussetzungen für einen Urheberrechtsschutz (Copyright) und darf nicht ins Git-Repository eingeführt werden.
+Bei der Verwendung KI-generierter oder wesentlich durch KI unterstützter Softwarebestandteile ist zu berücksichtigen, dass ein urheberrechtlicher Schutz nach schweizerischem Urheberrecht eine geistige Schöpfung mit individuellem Charakter voraussetzt (Art. 2 URG).
 
-Der Software-Architekt hat durch aktives, menschliches und wertschöpfendes Zutun (z. B. substanzielle Überarbeitung, individuelle Anpassung oder Erweiterung) sicherzustellen, dass der Code die erforderliche Schöpferhöhe erreicht, um rechtlichen Schutz für das Unternehmen zu gewährleisten.
+Ob diese Voraussetzungen erfüllt sind, ist anhand des konkreten Werkes und des jeweiligen menschlichen schöpferischen Beitrags zu beurteilen. Die blosse Verwendung, Auswahl oder geringfügige Anpassung KI-generierten Codes begründet nicht automatisch einen urheberrechtlichen Schutz.
+
+Ebenso wenig darf aus der Verwendung von KI-generiertem Code ohne Weiteres auf eine Verletzung von Rechten Dritter geschlossen werden. Die Prüfung möglicher Dritt- und Lizenzrechte richtet sich ergänzend nach den Vorgaben zur Lizenz- und Rechteprüfung in diesem Reglement.
+
+Die Verantwortung für die Einhaltung dieser Vorgaben richtet sich nach den jeweiligen Aufgaben, Zuständigkeiten und tatsächlichen Entscheidungsbefugnissen der beteiligten Mitarbeitenden sowie den geltenden gesetzlichen Bestimmungen.
+
+**Arbeitsrechtliche Verantwortlichkeit**: Eine schuldhafte Verletzung der vorstehenden Vorgaben kann eine Verletzung arbeitsvertraglicher Sorgfalts- und Treuepflichten darstellen. Eine daraus resultierende Schadenersatzpflicht der Mitarbeitenden richtet sich ausschliesslich nach den gesetzlichen Voraussetzungen und Haftungsbeschränkungen, insbesondere nach Art. 321e OR. Ein Rückgriff des Unternehmens auf Mitarbeitende bleibt im gesetzlich zulässigen Umfang vorbehalten.
 
 ### 2.12 Qualität und Prüfung von Code-Kommentaren
 Von KI-Agenten generierte Kommentare dürfen nicht ungeprüft übernommen werden. Sämtliche Kommentare müssen vom Entwickler auf Richtigkeit, Prägnanz und Mehrwert geprüft und gegebenenfalls manuell überarbeitet oder gekürzt werden. Redundante, generische oder unverständliche KI-Erklärungen sind vor dem Einchecken zu entfernen.
