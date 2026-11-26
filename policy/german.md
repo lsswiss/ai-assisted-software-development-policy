@@ -118,7 +118,16 @@ Sofern KI-Agenten oder LLM-Schnittstellen direkt in Produkte oder Services der [
 System-Prompts, Instruction-Sets und interne Agenten-Logiken sind als vertrauliche Systemkomponenten zu behandeln. Sie müssen gegen Information Leakage und Exfiltration durch Manipulationstechniken (z. B. „Ignore previous instructions“) abgesichert werden.
 
 #### Human-in-the-Loop & Agency-Begrenzung (OWASP LLM08)
-KI-Agenten dürfen keine eigenständigen, unumkehrbaren Aktionen (wie das Löschen von Daten, das Ausführen von Finanztransaktionen oder das Ändern von Systemkonfigurationen) ohne explizite, manuelle Freigabe durch einen menschlichen Nutzer oder Operator durchführen.
+KI-Agenten dürfen keine eigenständigen, unumkehrbaren oder sicherheitskritischen Aktionen ohne vorherige explizite, manuelle Freigabe durch einen menschlichen Nutzer oder Operator durchführen.
+
+Hierzu zählen insbesondere:
+- das Löschen oder unwiderrufliche Verändern von Daten;
+- das Ausführen von Finanztransaktionen oder kostenpflichtigen Bestellungen;
+- das Ändern von Systemkonfigurationen, Berechtigungen oder Sicherheitsrichtlinien;
+- das Veröffentlichen oder externe Übermitteln vertraulicher oder geschäftsrelevanter Informationen;
+- das Durchführen produktiver Deployments oder vergleichbarer Eingriffe in produktive Systeme.
+
+Die Freigabe muss sich auf die konkret vorgesehene Aktion beziehen und vor deren Ausführung erfolgen. Eine nachträgliche Überprüfung ersetzt keine vorherige Freigabe.
 
 ### 2.15 Verbot autonomer Ausführungsmodi (YOLO-Modus) bei KI-Agenten
 #### 2.15.1 Grundsatz und Definition
