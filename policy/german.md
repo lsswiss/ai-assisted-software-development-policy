@@ -35,7 +35,7 @@ Die persönliche Verantwortung des Software-Architekten erstreckt sich auf seine
 
 Die Übernahme einer Funktion als Software-Architekt begründet keine verschuldensunabhängige Erfolgshaftung für die technische, wirtschaftliche oder rechtliche Fehlerfreiheit sämtlicher Softwareprodukte und Systeme des Unternehmens. Eine persönliche Haftung setzt die Erfüllung der gesetzlichen Haftungsvoraussetzungen voraus und beschränkt sich auf Pflichtverletzungen innerhalb des individuell übertragenen Aufgaben- und Verantwortungsbereichs.
 
-### 1.2 Arbeitsrechtliche Haftung
+### 1.4 Arbeitsrechtliche Haftung
 Der Software-Architekt oder Entwickler haftet für Schäden, die er dem Unternehmen oder Dritten durch eine schuldhafte Verletzung seiner arbeitsvertraglichen Pflichten verursacht, im Rahmen der gesetzlichen Bestimmungen, insbesondere nach Art. 321e OR.
 
 Bei der Beurteilung einer allfälligen Haftung sind insbesondere die Art der Pflichtverletzung, der Grad des Verschuldens, das Berufsrisiko, die übertragenen Aufgaben, die tatsächlichen Entscheidungsbefugnisse sowie die vom Arbeitgeber bereitgestellten Arbeitsmittel und organisatorischen Rahmenbedingungen zu berücksichtigen.
@@ -92,18 +92,18 @@ Es ist strikt untersagt, personenbezogene Daten (z. B. Kunden-, Mitarbeiter- ode
 #### Vorgaben für BYOAI-Tools (Commercial Use & Data Privacy)
 Bei der Nutzung von „Bring Your Own AI“ (BYOAI) dürfen ausschließlich KI-Tools und Tarife genutzt werden, deren Nutzungsbedingungen (Terms of Service) explizit garantieren, dass eingegebene Daten und Prompts nicht zum Training der KI-Modelle verwendet und nicht dauerhaft durch den Anbieter gespeichert werden (z. B. Business/Enterprise-Tiers mit Opt-out für Model Training). Die Nutzung kostenloser Consumer-Varianten ohne Datenschutzgarantien ist für geschäftliche Zwecke untersagt.
 
-### 2.10 Urheberrecht und Schöpferhöhe bei KI-Einsatz
+### 2.11 Urheberrecht und Schöpferhöhe bei KI-Einsatz
 Rein KI-generierter Code erfüllt nach internationalen Standards nicht die Voraussetzungen für einen Urheberrechtsschutz (Copyright) und darf nicht ins Git-Repository eingeführt werden.
 
 Der Software-Architekt hat durch aktives, menschliches und wertschöpfendes Zutun (z. B. substanzielle Überarbeitung, individuelle Anpassung oder Erweiterung) sicherzustellen, dass der Code die erforderliche Schöpferhöhe erreicht, um rechtlichen Schutz für das Unternehmen zu gewährleisten.
 
-### 2.11 Qualität und Prüfung von Code-Kommentaren
+### 2.12 Qualität und Prüfung von Code-Kommentaren
 Von KI-Agenten generierte Kommentare dürfen nicht ungeprüft übernommen werden. Sämtliche Kommentare müssen vom Entwickler auf Richtigkeit, Prägnanz und Mehrwert geprüft und gegebenenfalls manuell überarbeitet oder gekürzt werden. Redundante, generische oder unverständliche KI-Erklärungen sind vor dem Einchecken zu entfernen.
 
-### 2.12 Bestandsschutz von Kernkomponenten und Engines
+### 2.13 Bestandsschutz von Kernkomponenten und Engines
 Bestehende Kernkomponenten und Engines (z. B. API-Architektur, Payment-Gateways, Template- oder Form-Engines, hauseigene Code- & Funktions-Bibliotheken) dürfen nicht durch KI-generierten Code, Refactorings oder automatistische KI-Versionsupdates ersetzt, umgangen oder in ihrer Funktionsweise grundlegend verändert werden. Ausnahmen erfordern eine vorherige schriftliche Zustimmung der Geschäftsleitung.
 
-### 2.13 Kennzeichnungspflicht und EU AI Act Compliance
+### 2.14 Kennzeichnungspflicht und EU AI Act Compliance
 
 #### Transparenz gegenüber Endkunden
 Die Nutzung und Bereitstellung von KI-Systemen hat unter Berücksichtigung der jeweils anwendbaren gesetzlichen Anforderungen zu erfolgen. Soweit der EU AI Act auf die Tätigkeit, Produkte oder Dienstleistungen des Unternehmens anwendbar ist, sind dessen einschlägige Transparenz-, Dokumentations- und Risikovorgaben einzuhalten. Verbotene KI-Praktiken gemäss Art. 5 EU AI Act sind untersagt.
@@ -111,7 +111,7 @@ Die Nutzung und Bereitstellung von KI-Systemen hat unter Berücksichtigung der j
 #### Verbot von Risikoklassen
 Der Einsatz von KI-Systemen, die unter das Verbot des EU AI Act fallen (z. B. unzulässige Verhaltensbeeinflussung oder Biometrie-Scoring), ist im gesamten Unternehmen ausnahmslos untersagt.
 
-### 2.14 Sicherheit von KI-Komponenten im Produkt (Prompt Injection & System Prompts)
+### 2.15 Sicherheit von KI-Komponenten im Produkt (Prompt Injection & System Prompts)
 
 #### Schutz vor Prompt Injection (OWASP LLM01)
 Sofern KI-Agenten oder LLM-Schnittstellen direkt in Produkte oder Services der [Company] integriert werden, sind geeignete technische und organisatorische Maßnahmen zum Schutz vor direkter und indirekter Prompt Injection umzusetzen. Nicht vertrauenswürdige Benutzer- und Fremdinhalte dürfen nicht ungeprüft als vertrauenswürdige Instruktionen verarbeitet werden. Insbesondere sind eine klare Trennung von Systeminstruktionen und nicht vertrauenswürdigen Inhalten, serverseitige Autorisierungs- und Validierungsprüfungen für Tool- und Funktionsaufrufe sowie das Prinzip der geringstmöglichen Berechtigungen sicherzustellen.
@@ -131,8 +131,8 @@ Hierzu zählen insbesondere:
 
 Die Freigabe muss sich auf die konkret vorgesehene Aktion beziehen und vor deren Ausführung erfolgen. Eine nachträgliche Überprüfung ersetzt keine vorherige Freigabe.
 
-### 2.15 Verbot autonomer Ausführungsmodi (YOLO-Modus) bei KI-Agenten
-#### 2.15.1 Grundsatz und Definition
+### 2.16 Verbot autonomer Ausführungsmodi (YOLO-Modus) bei KI-Agenten
+#### 2.16.1 Grundsatz und Definition
 Der sogenannte YOLO-Modus (You Only Live Once) bezeichnet einen Ausführungsmodus von KI-Agenten, bei dem diese eigenständig und ohne vorherige manuelle Bestätigung einzelner Aktionen Befehle ausführen, Dateien verändern, Code generieren, löschen, installieren oder anderweitige Systemoperationen durchführen können.
 
 Die Nutzung solcher autonomen Ausführungsmodi ist im Rahmen der geschäftlichen Tätigkeit grundsätzlich untersagt.
@@ -141,7 +141,7 @@ KI-Agenten dürfen ausschliesslich in solchen Ausführungsmodi verwendet werden,
 
 Das Verbot gilt unabhängig davon, ob sich die betreffende Umgebung auf einem lokalen Rechner, einem Entwicklungsserver, einem Testserver, einem Staging-System oder einem Produktivserver befindet.
 
-#### 2.15.2 Beispiele zur Abgrenzung zulässiger und unzulässiger Nutzung
+#### 2.16.2 Beispiele zur Abgrenzung zulässiger und unzulässiger Nutzung
 
 Die nachfolgende Tabelle dient der Konkretisierung des Verbots:
 
@@ -156,7 +156,7 @@ Die nachfolgende Tabelle dient der Konkretisierung des Verbots:
 
 Das Verbot umfasst insbesondere die Aktivierung von Ausführungsmodi, bei denen KI-Agenten Shell-Befehle, Dateioperationen, Codeänderungen oder sonstige Systemoperationen ohne vorherige menschliche Freigabe selbstständig durchführen können.
 
-#### 2.15.3 Zulässige KI-gestützte Entwicklungsarbeit
+#### 2.16.3 Zulässige KI-gestützte Entwicklungsarbeit
 Die Verwendung von KI-Agenten zur Unterstützung der Softwareentwicklung bleibt ausdrücklich zulässig, sofern die Ausführung innerhalb eines kontrollierten Arbeitsablaufs erfolgt.
 
 Insbesondere dürfen KI-Agenten:
@@ -167,12 +167,12 @@ Insbesondere dürfen KI-Agenten:
 - Fehler analysieren und Lösungsvorschläge erarbeiten.
 Der Entwickler muss die Kontrolle über die Ausführung behalten und sicherstellen, dass KI-generierte Änderungen vor ihrer Übernahme in die Versionsverwaltung fachlich, technisch und sicherheitstechnisch geprüft werden.
 
-#### 2.15.4 Verantwortung und Einhaltung
+#### 2.16.4 Verantwortung und Einhaltung
 Die eigenmächtige Aktivierung oder Verwendung eines untersagten autonomen Ausführungsmodus entgegen den vorstehenden Bestimmungen kann eine Verletzung arbeitsvertraglicher Pflichten darstellen.
 
 Die Beurteilung allfälliger arbeitsrechtlicher Konsequenzen und einer daraus resultierenden Haftung richtet sich nach den geltenden gesetzlichen Bestimmungen und den konkreten Umständen des Einzelfalls.
 
-### 2.16 Verbot der unnötigen Neuentwicklung bestehender Softwarekomponenten (Rewrite statt Bugfix)
+### 2.17 Verbot der unnötigen Neuentwicklung bestehender Softwarekomponenten (Rewrite statt Bugfix)
 Bestehende Softwarekomponenten, Module und Anwendungen sind grundsätzlich gezielt weiterzuentwickeln und instand zu halten. Fehler (Bugs), Fehlfunktionen und technische Unzulänglichkeiten sind vorrangig durch gezielte Korrekturen, Verbesserungen oder angemessene Refactorings innerhalb der bestehenden Architektur zu beheben.
 
 Es ist untersagt, bestehende Softwarekomponenten, Module oder Anwendungen ohne sachlich und technisch begründete Notwendigkeit vollständig oder in wesentlichen Teilen durch KI-generierten Code neu entwickeln oder ersetzen zu lassen, wenn die bestehenden Funktionalitäten durch gezielte Fehlerbehebungen oder verhältnismässige Anpassungen erhalten und verbessert werden können.
@@ -187,7 +187,7 @@ Bei einer genehmigten Neuentwicklung sind insbesondere die bestehenden Geschäft
 
 Die Verantwortung für die Einhaltung bestehender Architekturvorgaben sowie für die technische Begründung vorgeschlagener Neuentwicklungen verbleibt beim zuständigen Software-Architekten beziehungsweise Entwickler im Rahmen seines jeweiligen Aufgaben- und Verantwortungsbereichs.
 
-### 2.17 Kurzlebige Entwicklungs- und Testartefakte (Short-Living Test Artifacts)
+### 2.18 Kurzlebige Entwicklungs- und Testartefakte (Short-Living Test Artifacts)
 Während der Entwicklung, Fehlerbehebung und Implementierung von Software dürfen Entwickler temporäre Testskripte, Testdaten, Debugging-Dateien, Hilfsprogramme und sonstige technische Testartefakte erstellen und verwenden.
 
 Diese dienen ausschliesslich der unmittelbaren Entwicklungs- und Überprüfungsarbeit und sind grundsätzlich nicht dauerhaft in das produktive Repository zu übernehmen.
@@ -200,7 +200,7 @@ Dauerhaft zu übernehmende automatisierte Tests müssen einen nachvollziehbaren,
 
 Die Entscheidung über die dauerhafte Integration umfangreicher Testinfrastrukturen richtet sich nach den bestehenden Architekturvorgaben und Zuständigkeiten.
 
-### 2.18 Auswertung von Datenbanklogs und produktionsnahen Daten
+### 2.19 Auswertung von Datenbanklogs und produktionsnahen Daten
 Müssen Datenbanklogs, Datenbankauszüge oder sonstige produktionsbezogene Datensätze zu Analyse-, Debugging-, Fehlerbehebungs- oder Entwicklungszwecken ausgewertet werden, hat dies grundsätzlich ausschliesslich anhand einer separaten Kopie der betreffenden Daten zu erfolgen.
 
 Die hierfür benötigten Daten sind vor der Auswertung aus der produktiven Umgebung zu exportieren und in eine geeignete, vom Produktivsystem getrennte Analyse- oder Entwicklungsumgebung zu übertragen.
