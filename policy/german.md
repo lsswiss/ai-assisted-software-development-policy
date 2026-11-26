@@ -2,13 +2,43 @@
 
 Für den Einsatz von KI gelten bei [Company] die folgenden Grundsätze. Sie orientieren sich an der OWASP-Liste **„Top 10 Risks for LLM Applications“ (2025)**.
 
-## 1. Verantwortung und Haftung des Software-Architekten
+## 1. Verantwortung und Rollenverständnis des Software-Architekten
 
-### 1.1 Verantwortung
-Der Software-Architekt muss jede eingecheckte Zeile Code jederzeit erklären können. Die Verantwortung für den Code bleibt vollumfänglich beim Menschen, welcher als Software-Architekt agiert und für die von ihm getroffenen technologischen Entscheidungen verantwortlich ist.
+### 1.1 Aufgabenbereich und Rollenverständnis
+Der Unterzeichner nimmt im Rahmen seiner Tätigkeit für [Company] die Funktion eines Software-Architekten für Software und technologische Dienste wahr.
+
+Sein Aufgabenbereich umfasst insbesondere die Konzeption, Architektur, Entwicklung, Implementierung, Integration, Prüfung und Weiterentwicklung von Softwarelösungen und technologischen Diensten. Dazu zählen unter anderem SaaS-Anwendungen, mobile Anwendungen, Web-Lösungen, Desktop-Software, API-Dienste, SOAP-Schnittstellen sowie sonstige softwarebasierte Systeme und Technologien.
+
+Der Software-Architekt versteht sich ausdrücklich nicht als sogenannter Vibe Coder, der durch KI-Systeme oder automatisierte Werkzeuge generierten Code ungeprüft übernimmt oder integriert, ohne dessen Funktionsweise und technische Auswirkungen nachvollziehen zu können.
+
+### 1.2 Eigenverantwortung und Code-Verständnis
+Der Software-Architekt muss jederzeit in der Lage sein, den von ihm entwickelten, veränderten oder eingecheckten Code fachlich und technisch nachzuvollziehen und dessen wesentliche Funktionsweise zu erklären.
+
+Er muss außerdem die zugrunde liegenden Architektur- und Technologieentscheidungen eigenständig begründen können.
+
+Dies gilt unabhängig davon, ob der betreffende Code vollständig eigenständig entwickelt, mithilfe von KI-Systemen generiert oder durch andere automatisierte Werkzeuge erstellt beziehungsweise verändert wurde.
+
+KI-generierter oder automatisiert erzeugter Code darf nicht ohne angemessene fachliche und technische Prüfung in ein Softwareprojekt integriert werden.
+
+### 1.3 Abgrenzung der Verantwortung
+
+Der Software-Architekt trägt im Rahmen seiner jeweiligen Funktion, Zuständigkeit und tatsächlichen Entscheidungsbefugnis Verantwortung für:
+
+- die von ihm getroffenen Architektur- und Technologieentscheidungen;
+- die fachliche und technische Nachvollziehbarkeit seiner eigenen Entwicklungsleistungen;
+- die sorgfältige Prüfung und Integration von Codeänderungen;
+- die Einhaltung der ihm zugewiesenen Qualitäts- und Sicherheitsanforderungen.
+
+Die Verantwortung für übergeordnete Architekturvorgaben, technische Rahmenbedingungen sowie ausdrücklich durch andere zuständige Stellen getroffene Entscheidungen verbleibt bei den jeweils hierfür verantwortlichen Personen oder Organisationseinheiten.
+
+Die persönliche Verantwortung des Software-Architekten erstreckt sich auf seinen jeweiligen Aufgaben- und Verantwortungsbereich und richtet sich nach den geltenden gesetzlichen Bestimmungen.
 
 ### 1.2 Arbeitsrechtliche Haftung
-Verstößt der Software-Architekt oder Entwickler vorsätzlich oder grob fahrlässig gegen die Vorgaben dieses Reglements – insbesondere, aber nicht beschränkt auf Lizenzprüfungen, Verstöße gegen Datenschutzbestimmungen oder die Nichteinhaltung des Überprüfungsgebots von KI-Code –, haftet er im Rahmen der gesetzlichen Bestimmungen (insb. Art. 321e OR) für die dem Unternehmen oder Dritten dadurch entstehenden Schäden.
+Der Software-Architekt oder Entwickler haftet für Schäden, die er dem Unternehmen oder Dritten durch eine schuldhafte Verletzung seiner arbeitsvertraglichen Pflichten verursacht, im Rahmen der gesetzlichen Bestimmungen, insbesondere nach Art. 321e OR.
+
+Bei der Beurteilung einer allfälligen Haftung sind insbesondere die Art der Pflichtverletzung, der Grad des Verschuldens, das Berufsrisiko, die übertragenen Aufgaben, die tatsächlichen Entscheidungsbefugnisse sowie die vom Arbeitgeber bereitgestellten Arbeitsmittel und organisatorischen Rahmenbedingungen zu berücksichtigen.
+
+Die vorsätzliche oder fahrlässige Missachtung verbindlicher Sicherheits-, Datenschutz-, Lizenzierungs- oder Überprüfungsvorgaben kann eine arbeitsvertragliche Pflichtverletzung darstellen. Ob daraus eine Schadenersatzpflicht entsteht, beurteilt sich nach den gesetzlichen Voraussetzungen.
 
 ## 2. KI-Nutzung, Sicherheits- und Compliance-Vorgaben
 
@@ -35,9 +65,24 @@ Es werden keine API-Routen oder Ajax-Endpunkte erstellt, die frei auf die Datenb
 KI-generierter Code wird vor dem Einchecken in die Repositories vom zuständigen Software-Architekten sorgfältig daraufhin geprüft, ob er Lizenzen, Urheberrechte oder sonstige Schutzrechte Dritter verletzt.
 
 ### 2.8 Bring Your Own AI (BYOAI)
-Der Software-Architekt bezahlt für die von ihm verwendeten KI-Tools selbst.
 
-### 2.9 Datenschutz, Vertraulichkeit und Schutz von Betriebsgeheimnissen
+Die Nutzung privater KI-Abonnements und eigener KI-Zugänge für geschäftliche Zwecke bedarf der vorgängigen schriftlichen Zustimmung der Geschäftsleitung. Die Genehmigungskompetenz liegt ausschliesslich bei der Geschäftsleitung oder einer von ihr ausdrücklich schriftlich bevollmächtigten Stelle.
+
+Die Geschäftsleitung bestimmt, welche privaten KI-Werkzeuge und Tarifmodelle im Einzelfall für geschäftliche Zwecke zugelassen werden. Die private Finanzierung begründet keinen Anspruch auf Genehmigung oder auf Nutzung eines bestimmten KI-Werkzeugs.
+
+Die Kenntnisnahme, Duldung oder unterlassene Intervention durch einzelne Vorgesetzte stellt für sich allein keine Genehmigung im Sinne dieser Bestimmung dar.
+
+Mitarbeitende sind verpflichtet, nicht genehmigte private KI-Abonnements und KI-Zugänge nicht für geschäftliche Zwecke einzusetzen. Eine eigenmächtige Nutzung entgegen einer ausdrücklichen Weisung kann arbeitsrechtliche Konsequenzen haben.
+
+### 2.9 Bereitstellung und Einschränkungen von KI-Werkzeugen
+
+Das Unternehmen legt den Umfang der für geschäftliche Zwecke bereitgestellten KI-Werkzeuge und deren Nutzungskontingente fest. Es ist berechtigt, die Bereitstellung auf bestimmte Produktversionen, Tarifmodelle und Funktionsumfänge zu beschränken.
+
+Wünschen Mitarbeitende darüber hinausgehende Funktionen oder höhere Nutzungskontingente, die für die Erfüllung ihrer zugewiesenen Aufgaben nicht erforderlich sind, können sie die daraus entstehenden Mehrkosten grundsätzlich selbst tragen. Voraussetzung für eine geschäftliche Nutzung bleibt die vorgängige schriftliche Genehmigung gemäss Ziffer 2.8.
+
+Sind weitergehende Funktionen oder Nutzungskontingente für die Erfüllung einer zugewiesenen Aufgabe betrieblich erforderlich, entscheidet das Unternehmen über deren Bereitstellung und Kostenübernahme.
+
+### 2.10 Datenschutz, Vertraulichkeit und Schutz von Betriebsgeheimnissen
 
 #### Verbot vertraulicher Datenübermittlung
 Es ist strikt untersagt, personenbezogene Daten (z. B. Kunden-, Mitarbeiter- oder Lieferantendaten), Zugangsdaten, Passwörter, Geschäftsgeheimnisse oder geschützte interne Quellcodes in externe oder öffentliche KI-Modelle einzugeben oder als Prompt/Context hochzuladen.
@@ -46,9 +91,9 @@ Es ist strikt untersagt, personenbezogene Daten (z. B. Kunden-, Mitarbeiter- ode
 Bei der Nutzung von „Bring Your Own AI“ (BYOAI) dürfen ausschließlich KI-Tools und Tarife genutzt werden, deren Nutzungsbedingungen (Terms of Service) explizit garantieren, dass eingegebene Daten und Prompts nicht zum Training der KI-Modelle verwendet und nicht dauerhaft durch den Anbieter gespeichert werden (z. B. Business/Enterprise-Tiers mit Opt-out für Model Training). Die Nutzung kostenloser Consumer-Varianten ohne Datenschutzgarantien ist für geschäftliche Zwecke untersagt.
 
 ### 2.10 Urheberrecht und Schöpferhöhe bei KI-Einsatz
-Sämtliche Rechte an KI-unterstützt erstelltem Code, Testfällen und Dokumentationen stehen uneingeschränkt dem Unternehmen zu, unabhängig davon, ob diese während oder außerhalb der regulären Arbeitszeit erstellt wurden. Rein KI-generierter Code erfüllt nach internationalen Standards nicht die Voraussetzungen für einen Urheberrechtsschutz (Copyright) und darf nicht eingecheckt werden.
+Rein KI-generierter Code erfüllt nach internationalen Standards nicht die Voraussetzungen für einen Urheberrechtsschutz (Copyright) und darf nicht ins Git-Repository eingeführt werden.
 
-Der Software-Architekt sowie die beteiligten Entwickler haben durch aktives, menschliches und wertschöpfendes Zutun (z. B. substanzielle Überarbeitung, individuelle Anpassung oder Erweiterung) sicherzustellen, dass der Code die erforderliche Schöpferhöhe erreicht, um rechtlichen Schutz für das Unternehmen zu gewährleisten.
+Der Software-Architekt hat durch aktives, menschliches und wertschöpfendes Zutun (z. B. substanzielle Überarbeitung, individuelle Anpassung oder Erweiterung) sicherzustellen, dass der Code die erforderliche Schöpferhöhe erreicht, um rechtlichen Schutz für das Unternehmen zu gewährleisten.
 
 ### 2.11 Qualität und Prüfung von Code-Kommentaren
 Von KI-Agenten generierte Kommentare dürfen nicht ungeprüft übernommen werden. Sämtliche Kommentare müssen vom Entwickler auf Richtigkeit, Prägnanz und Mehrwert geprüft und gegebenenfalls manuell überarbeitet oder gekürzt werden. Redundante, generische oder unverständliche KI-Erklärungen sind vor dem Einchecken zu entfernen.
@@ -102,11 +147,15 @@ Beim manuellen Testing wird die Anwendung zwingend auf folgende Usability-Kriter
 
 ## 4. Geltung und Verbindlichkeit
 
-Dieses Reglement ist ab dem [Datum] betrieblich gültig.
+Dieses Reglement bildet einen verbindlichen Bestandteil der bestehenden Vereinbarung zwischen der [company] und dem Unterzeichner.
 
-Mit seiner Unterschrift erlangt dieses Reglement für den unterzeichnenden Software-Architekten unmittelbare Verbindlichkeit. Er bestätigt damit, das Reglement gelesen und verstanden zu haben und die darin enthaltenen Pflichten und Haftungsbedingungen vollumfänglich einzuhalten.
+Es tritt am [Datum] in Kraft und gilt für die gesamte Dauer des Vertragsverhältnisses, soweit es nicht durch eine schriftliche Vereinbarung geändert oder aufgehoben wird.
 
-Die Geschäftsleitung überprüft das Reglement mindestens einmal jährlich. Anpassungen werden dem Software-Architekten erneut zur Kenntnisnahme und Gegenzeichnung vorgelegt.
+Mit seiner Unterschrift bestätigt der Unterzeichner, dieses Reglement vollständig gelesen und verstanden zu haben. Er verpflichtet sich, die darin festgelegten technischen, organisatorischen und sicherheitsbezogenen Vorgaben im Rahmen seiner Tätigkeit einzuhalten.
+
+Die Unterzeichnung dieses Reglements begründet keine über die zwingenden und teilzwingenden gesetzlichen Bestimmungen hinausgehende Arbeitnehmerhaftung.
+
+Änderungen und Ergänzungen dieses Reglements bedürfen der schriftlichen Vereinbarung zwischen den Vertragsparteien.
 
 
 Erlassen durch die Geschäftsleitung:
