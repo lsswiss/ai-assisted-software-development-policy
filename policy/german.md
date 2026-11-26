@@ -171,6 +171,7 @@ Insbesondere dürfen KI-Agenten:
 - neue Funktionen implementieren, sofern die erforderlichen Ausführungsschritte kontrolliert erfolgen;
 - Testfälle und Dokumentationen generieren;
 - Fehler analysieren und Lösungsvorschläge erarbeiten.
+
 Der Entwickler muss die Kontrolle über die Ausführung behalten und sicherstellen, dass KI-generierte Änderungen vor ihrer Übernahme in die Versionsverwaltung fachlich, technisch und sicherheitstechnisch geprüft werden.
 
 #### 2.16.4 Verantwortung und Einhaltung
